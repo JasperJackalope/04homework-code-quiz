@@ -26,12 +26,7 @@
     display: inline-block;
     font-size: 25px;
     margin-left: 25px;
-  }
-  
-  header h2 {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 25px;
+    margin-right: 25px;
   }
 
   .card {
@@ -59,5 +54,28 @@
   }
 
   .bttn:hover {
-    border: 5px solid red;
+    border: 5px solid black;
+  }
+
+  .bttn.correct {
+    background-color: #03ac13;
+  }
+
+  .bttn.wrong {
+    background-color: #d21404;
+  }
+
+  .start-bttn {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hide {
+    display: none;
   }
