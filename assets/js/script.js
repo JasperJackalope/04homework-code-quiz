@@ -1,3 +1,20 @@
+var startBttn = document.getElementById('start-bttn')
+
+startBttn.addEventListener('click', startQuiz)
+
+function startQuiz() {
+  console.log('Funkytown');
+}
+
+function nextQuestion() {
+
+}
+
+function selectAnswer() {
+
+}
+
+
 // console.log("I'm here...")
 
 // var startBttn = document.getElementById("start-button");
