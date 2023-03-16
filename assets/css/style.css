@@ -1,10 +1,22 @@
-*{
-    background-color: #ecfefa;
-}
-.main-header {
+  *::before, *::after {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecfefa
+  }
+
+  .main-header {
     display: flex;
     justify-content: space-between;
-    background-color: #ecfefa;
+    background-color: #FFC1C6;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     color: black;
     width: 100%;
@@ -12,11 +24,40 @@
   
   header h1 {
     display: inline-block;
-    font-size: 35px;
+    font-size: 25px;
     margin-left: 25px;
   }
   
   header h2 {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 20px;
+    font-size: 25px;
+  }
+
+  .card {
+    margin-top: 100px;
+    width: 800px;
+    max-width: 75%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px 1px;
+  }
+
+  .bttn-list {
+    display: grid;
+    gap: 10px;
+    margin: 25px 0;
+  }
+
+  .bttn {
+    background-color: #fdefb2;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+  }
+
+  .bttn:hover {
+    border: 5px solid red;
   }
