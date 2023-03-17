@@ -28,10 +28,10 @@ var questionsArray = [
 
 var startBttn = document.getElementById('start-bttn');
 var questionCard = document.getElementById('q-card');
-var currentQuestion;
 var questionEL = document.getElementById('question');
 var answerBttnEL = document.getElementById('answer-bttn');
-var startCardEL = document.getElementById('startcard'); 
+var startCardEL = document.getElementById('startcard');
+var endCardEL = document.getElementById('endcard'); 
 
 startBttn.addEventListener('click', startQuiz);
 
@@ -39,38 +39,38 @@ function startQuiz() {
   console.log('Funkytown');
   startBttn.classList.add('hide');
   startCardEL.classList.add('hide');
-  currentQuestion = 0;
   questionCard.classList.remove('hide');
-  // nextQuestion();
 }
+
+
 
 // function nextQuestion() {
 //   showQuestion(currentQuestion);
 
 // }
 
-function showQuestion(questionsArray) {
-  questionEL.innertext = questionsArray.question;
-  question.answers.array.forEach(element => {
-    const button = document.createElement('button');
-    button.innerText = answer.text;
-    button.classList.add('bttn');
-    if (answer.correct) {
-      button.dataset.correct = answer.correct;
-    }
-    button.addEventListener('click', selectAnswer);
-    answerBttnEL.appendChild(button);
-  });
+// function showQuestion(questionsArray) {
+//   questionEL.innertext = questionsArray.question;
+//   questionsArray.answers.array.forEach(element => {
+//     const button = document.createElement('button');
+//     button.innerText = answer.text;
+//     button.classList.add('bttn');
+//     if (answer.correct) {
+//       button.dataset.correct = answer.correct;
+//     }
+//     button.addEventListener('click', selectAnswer);
+//     answerBttnEL.appendChild(button);
+//   });
 
-}
+// }
 
-function selectAnswer() {
+// function selectAnswer() {
 
-}
+// }
 
 
 
-// console.log("I'm here...")
+// // console.log("I'm here...")
 
 // var startBttn = document.getElementById("start-button");
 // var timerEL = document.getElementById("timer");
