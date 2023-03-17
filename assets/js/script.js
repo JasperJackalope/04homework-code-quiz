@@ -31,12 +31,14 @@ var questionCard = document.getElementById('q-card');
 var currentQuestion;
 var questionEL = document.getElementById('question');
 var answerBttnEL = document.getElementById('answer-bttn');
+var startCardEL = document.getElementById('startcard'); 
 
 startBttn.addEventListener('click', startQuiz);
 
 function startQuiz() {
   console.log('Funkytown');
   startBttn.classList.add('hide');
+  startCardEL.classList.add('hide');
   currentQuestion = 0;
   questionCard.classList.remove('hide');
   // nextQuestion();

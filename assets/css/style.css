@@ -39,6 +39,15 @@
     box-shadow: 0 0 10px 1px;
   }
 
+  .card h1{
+    text-align: center;
+  }
+
+  .card p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+  }
+
   .bttn-list {
     display: grid;
     gap: 10px;
@@ -68,6 +77,7 @@
   .start-bttn {
     font-size: 2rem;
     font-weight: bolder;
+    align-content: center;
   }
 
   .controls {
