@@ -22,7 +22,7 @@ var currentQuestionIndex = 0;
 
 const questionsArray = [
     {
-      question: 'Which of the following is not a commonly used data type?', 
+      question: 'Which of the following is NOT a commonly used data type?', 
       answers: ["Strings", "Booleans", "Alerts", "Numbers"],
       correctAnswer: 2
     },
@@ -45,7 +45,13 @@ const questionsArray = [
       question: 'What is a very useful tool for printing content to the debugger during development?',
       answers: ["JavaScript", "Terminal/Bash", "For Loops", "Console Log"],
       correctAnswer: 3
+    },
+    {
+        question: 'Do you know the way to San Jose?',
+        answers: ["Yes", "No", "Whoa-whoa-whoa-whoa-whooooaaaaa", "Huh?"],
+        correctAnswer: 2
     }
+
   ];
 
 
