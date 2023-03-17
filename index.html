@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css"/>
-  <title>Code Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header class="main-header">
-    <h1>View High Scores</h1>
-    <h1 id="timer">Timer</h1>
-  </header>
-  <div id="startcard" class="card">
-    <h1>Code Quiz</h1>
-    <p>Think you know everything about coding? Prove it by taking this quiz. Click start and go agains the clock. But beware, every wrong answer will penalize your final score and speed up the clock!</p>
-    <button id="start-bttn" class="start-bttn bttn">Start Quiz!</button>
-  </div>
-  <div id="q-card" class="card hide">
-      <div id="question">Question</div>
-      <div id="answer-bttn" class="bttn-list">
-        <button class="bttn">Answer 1</button>
-        <button class="bttn">Answer 2</button>
-        <button class="bttn">Answer 3</button>
-        <button class="bttn">Answer 4</button>
-      </div>
-  </div>
-  <div id="endcard" class="card hide">
-    <h1>The End</h1>
-    <p>To Add: Final score, Buttons, other things?</p>
-  </div>
-  <script type="text/javascript" src="./assets/js/script.js"></script>
+    <header>
+        <h1>Code Quiz</h1>
+    </header>
+    <div id="tm-sc-bar">
+        <h2 id="highscores">View high scores</h2>
+        <h2 id ="timeleft">Time: <span id="secondsLeft"></span></h2>
+    </div>
+    <div>
+        <div id="startpage">
+            <p>Think you know everything about coding? Prove it by taking this quiz. Click start and go against the clock. But beware, every wrong answer will penalize your final score and speed up the clock!
+            </p>
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+        <div id="quizcard">
+            <div id="questioncard"></div>
+            <div id="answercard"></div>
+        </div>
+        <div id="end">
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <form id="enterScore">
+                <label for="initials">Enter initials:</label>
+                <input type="text" id="initials" name="initials" required minlength="1" maxlength="10">
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+        <ul id="scorecard"></ul>
+    </div>
+    <footer></footer>
+    <script src="./script.js"></script>
 </body>
 </html>
