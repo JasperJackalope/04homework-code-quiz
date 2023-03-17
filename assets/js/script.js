@@ -1,16 +1,64 @@
+var questionsArray = [
+  {
+    question: 'Which of the following is not a commonly used data type?', 
+    answers: ["Strings", "Booleans", "Alerts", "Numbers"],
+    correctAnswer: 2
+  },
+  {
+    question: 'Where is the condition in an if/then statement enclosed?',
+    answers: [ "Parentheses", "Quotes", "Curly Brackets", "Square Brackets"],
+    correctAnswer: 0
+  },
+  {
+    question: 'Arrays in JavaScript can be used to store what?',
+    answers: ["Numbers and Stings", "Other Arrays", "Booleans", "All of the Above"],
+    correctAnswer: 3
+  },
+  {
+    question: 'String values must be enclosed within which symbol when assigned to variables?',
+    answers: ["Curly Brackets", "Quotes", "Parentheses", "Commas"],
+    correctAnswer: 1
+  },
+  {
+    question: 'What is a very useful tool for printing content to the debugger during development?',
+    answers: ["JavaScript", "Terminal/Bash", "For Loops", "Console Log"],
+    correctAnswer: 3
+  }
+]
+
 var startBttn = document.getElementById('start-bttn');
 var questionCard = document.getElementById('q-card');
+var currentQuestion;
+var questionEL = document.getElementById('question');
+var answerBttnEL = document.getElementById('answer-bttn');
 
-startBttn.addEventListener('click', startQuiz)
+startBttn.addEventListener('click', startQuiz);
 
 function startQuiz() {
   console.log('Funkytown');
   startBttn.classList.add('hide');
+  currentQuestion = 0;
   questionCard.classList.remove('hide');
-  nextQuestion();
+  // nextQuestion();
 }
 
-function nextQuestion() {
+// function nextQuestion() {
+//   showQuestion(currentQuestion);
+
+// }
+
+function showQuestion(questionsArray) {
+  questionEL.innertext = questionsArray.question;
+  question.answers.array.forEach(element => {
+    const button = document.createElement('button');
+    button.innerText = answer.text;
+    button.classList.add('bttn');
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener('click', selectAnswer);
+    answerBttnEL.appendChild(button);
+  });
 
 }
 
@@ -18,53 +66,7 @@ function selectAnswer() {
 
 }
 
-var questions = [
-  {
-    question: 'Which of the following is not a commonly used data type?', 
-    answers: [
-      {text: 'Strings', correct: false},
-      {text: 'Booleans', correct: false},
-      {text: 'Alerts', correct: true},
-      {text: 'Numbers', correct: false}
-    ]
-  }
-  {
-    question: 'Where is the condition in an if/then statement enclosed?',
-    answers: [
-      {text: 'Parentheses', correct: true},
-      {text: 'Quotes', correct: false},
-      {text: 'Curly Brackets', correct: false},
-      {text: 'Square Brackets', correct: false}
-    ]
-  }
-  {
-    question: 'Arrays in JavaScript can be used to store what?',
-    answers: [
-      {text: 'Numbers and Strings', correct: false},
-      {text: 'Other Arrays', correct: false},
-      {text: 'Booleans', correct: false},
-      {text: 'All of the Above', correct: True}
-    ]
-  }
-  {
-    question: 'String values must be enclosed within which symbol when assigned to variables?',
-    answers: [
-      {text: 'Curly Brackets', correct: false},
-      {text: 'Quotes', correct: true},
-      {text: 'Parentheses', correct: false},
-      {text: 'Commas', correct: false}
-    ]
-  }
-  {
-    question: 'What is a very useful tool for printing content to the debugger during development?',
-    answers: [
-      {text: 'JavaScript', correct: false},
-      {text: 'Terminal/Bash', correct: false},
-      {text: 'For Loops', correct: false},
-      {text: 'Console Log', correct: true}
-    ]
-  }
-]
+
 
 // console.log("I'm here...")
 
