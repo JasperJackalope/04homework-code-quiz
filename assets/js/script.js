@@ -28,6 +28,42 @@ var questions = [
       {text: 'Numbers', correct: false}
     ]
   }
+  {
+    question: 'Where is the condition in an if/then statement enclosed?',
+    answers: [
+      {text: 'Parentheses', correct: true},
+      {text: 'Quotes', correct: false},
+      {text: 'Curly Brackets', correct: false},
+      {text: 'Square Brackets', correct: false}
+    ]
+  }
+  {
+    question: 'Arrays in JavaScript can be used to store what?',
+    answers: [
+      {text: 'Numbers and Strings', correct: false},
+      {text: 'Other Arrays', correct: false},
+      {text: 'Booleans', correct: false},
+      {text: 'All of the Above', correct: True}
+    ]
+  }
+  {
+    question: 'String values must be enclosed within which symbol when assigned to variables?',
+    answers: [
+      {text: 'Curly Brackets', correct: false},
+      {text: 'Quotes', correct: true},
+      {text: 'Parentheses', correct: false},
+      {text: 'Commas', correct: false}
+    ]
+  }
+  {
+    question: 'What is a very useful tool for printing content to the debugger during development?',
+    answers: [
+      {text: 'JavaScript', correct: false},
+      {text: 'Terminal/Bash', correct: false},
+      {text: 'For Loops', correct: false},
+      {text: 'Console Log', correct: true}
+    ]
+  }
 ]
 
 // console.log("I'm here...")
