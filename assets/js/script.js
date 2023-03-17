@@ -138,7 +138,7 @@ function finishGame () {
     clearInterval(timerInterval);
     score = timerCount;
     timerElement.textContent = score;
-    quizCard.innerHTML = "All Done.";
+    quizCard.innerHTML = "That which was will no longer be.";
     endPage.setAttribute("style", "display:contents;");
     finalScore.textContent = score;
     form.addEventListener("submit", function(event) {
